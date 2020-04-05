@@ -1,0 +1,31 @@
+<div class="sl-container">
+    <mat-toolbar class="sl-toolbar mat-elevation-z3">
+        <mat-toolbar-row fxLayout="row" fxLayoutGap="20px">
+<!--            <button mat-icon-button (click)="sidenav.toggle()">-->
+<!--                <mat-icon>menu</mat-icon>-->
+<!--            </button>-->
+            <img class="sl-toolbar-logo" src="../assets/sorbonne.png" alt="Sorbonne library"/>
+            <sl-search-bar (onSearch)="search($event)" fxFlex></sl-search-bar>
+            <div fxFlex="1" fxHide.lt-sm></div>
+        </mat-toolbar-row>
+
+    </mat-toolbar>
+    <mat-sidenav-container class="sl-sidenav-container mat-elevation-z3">
+        <mat-sidenav #sidenav
+                     [fixedInViewport]="media.isActive('xs')"
+                     mode="side"
+                     [style.marginTop.px]="media.isActive('xs') ? 56 : 64"
+                     class="sl-sidenav">
+
+
+        </mat-sidenav>
+        <mat-sidenav-content class="sl-sidenav-content">
+            <router-outlet></router-outlet>
+<!--            <sl-books></sl-books>-->
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+</div>
+
+
+

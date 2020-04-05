@@ -1,0 +1,23 @@
+.ls-book-image-container {
+    cursor: pointer;
+    max-height: 200px;
+    min-height: 300px;
+}
+
+.ls-book-image {
+    max-width: 200px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.ls-book-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ls-book-author {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+}
